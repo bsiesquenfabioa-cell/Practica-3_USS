@@ -23,7 +23,7 @@ public class Logger {
         return instance;
     }
 
-    // Registrar logs
+    
     public void registrar(String nivel, String mensaje) {
         LocalDateTime ahora = LocalDateTime.now();
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -32,7 +32,7 @@ public class Logger {
         historial.add(log);
     }
 
-    // Mostrar historial
+    
     public void imprimirHistorial() {
         System.out.println("\n=== HISTORIAL DE LOGS ===");
         for (String log : historial) {
