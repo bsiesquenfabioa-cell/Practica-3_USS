@@ -10,7 +10,7 @@ public class ReportePDF {
     private boolean pieLegal;
     private String autor;
 
-    // Constructor privado
+    
     private ReportePDF(Builder builder) {
         this.titulo = builder.titulo;
         this.encabezado = builder.encabezado;
@@ -21,7 +21,7 @@ public class ReportePDF {
         this.autor = builder.autor;
     }
 
-    // Mostrar configuración
+   
     public void mostrar() {
         System.out.println("\n=== " + titulo + " ===");
         System.out.println("Autor: " + autor);
@@ -32,7 +32,7 @@ public class ReportePDF {
         System.out.println("Pie legal: " + pieLegal);
     }
 
-    // Builder
+   
     public static class Builder {
 
         private String titulo;
